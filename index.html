@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
+    <link rel="stylesheet" href="index.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <img src="./imagens/logo.png" alt="SOS">
+      <span class="logo_name">SOS</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+          <a href="#">
+            <i class='bx bx-show' ></i>
+            <span class="link_name">Monitoramento</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Monitoramento</a></li>
+          </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bxs-edit-alt' ></i>
+          <span class="link_name">Atendimento</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Atendimento</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-line-chart' ></i>
+          <span class="link_name">Relação</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Relação</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-history'></i>
+          <span class="link_name">Historico</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Historico</a></li>
+        </ul>
+      </li>
+      <li>
+    <div class="profile-details">
+        <div>
+            <h5 id="nomeUsuario" class="fonte">Jessica Vaz</h5>
+        </div>
+        <div id="status"></div>
+      <i class='bx bx-log-out' ></i>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+      <span class="text">Título da Página</span>
+    </div>
+  </section>
+
+
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+
+  $(document).ready(function () {
+    mudaCorStatus("#16DA92");
+  });
+
+function carregaPagina(pagina = "index.html") {
+    $("#loadPage").load(pagina);
+}
+
+function mudaCorStatus(cor) {
+    $("#status").css("background-color", cor);
+}
+  </script>
+</body>
+</html>
