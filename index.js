@@ -10,6 +10,3 @@ function mudaCorStatus(cor) {
     $("#status").css("background-color", cor);
 }
 
-$("#menu").onClick(function () {
-    $(".links").toggleClass("desaparece");
-})
