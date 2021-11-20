@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Signika', sans-serif;
+  color: #F2F2F2;
 }
 
 body {
@@ -16,7 +17,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: #F2F2F2;
     font-size: 1.3em;
 }
 
@@ -24,7 +25,7 @@ body {
     margin-left: 1em;
     margin-right: 1em;
     text-decoration: none;
-    color: #fff;
+    color: #F2F2F2;
 }
 
 #faixa {
@@ -50,8 +51,8 @@ body {
 }
 
 #slogan {
-    font-size: 1.2em;
-    color: #fff;
+    font-size: 1.4em;
+    color: #F2F2F2;
 }
 
 #conteudo {
@@ -60,4 +61,141 @@ body {
     margin-right: 3rem;
     height: 42rem;
     padding: 2rem;
+}
+
+.comprimento {
+    width: 100%;
+}
+
+.altura {
+    height: 2.5rem;
+}
+
+.lado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#divPrioridade {
+    margin-left: 1.5rem;
+}
+
+#divAssunto {
+    margin-right: 1.5rem;;
+}
+
+.espacamento {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#problema {
+    height: 15rem;
+    outline: none;
+    -webkit-appearance: none;
+    background: #7D889B;
+    border: 0;
+    font-size: 17px;
+    padding: 10px;
+}
+
+p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.btnEnviaTicket {
+    height: 2.5rem;
+    width: 10rem;
+    font-size: 20px;
+}
+
+.divBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+input {
+    outline: none;
+    -webkit-appearance: none;
+    background: #7D889B;
+    border: 0;
+    font-size: 17px;
+    padding: 5px;
+}
+
+select {
+    outline: none;
+    -webkit-appearance: none;
+    background: #7D889B;
+    border: 0;
+    font-size: 17px;
+    padding: 5px;
+}
+
+button {
+    background: #F2F2F2;
+    color: #D02F4A;
+    border: 0 none;
+    outline: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #F2F2F2 !important;
+}
+
+::placeholder {
+    color: #F2F2F2;
+    font-size: 17px;
+}
+
+#titulo {
+    font-size: 25px;
+}
+
+#escrita {
+    font-size: 17px;
+}
+
+#divPopUp {
+    width: 20%;
+    padding: 1rem;
+    position: fixed;
+    top: 16rem;
+    left: 92rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 2000;
+}
+
+.desaparece {
+    display: none!important;
+}
+
+.erro {
+    background-color: #ff7e93a6;
+    border: 2px solid #d02f4aaf;
+}
+
+.sucesso {
+    background-color: #82face6c;
+    border: 2px solid #15c081ce;
 }

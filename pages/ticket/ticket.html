@@ -25,18 +25,52 @@
     <div id="faixa">
         <div id="logo">
             <a href="#" id="sos">SOS</a>
-            <p id="slogan">SOLUÇÕES EM HELP DESK</p>
+            <h1 id="slogan">SOLUÇÕES EM HELP DESK</h1>
         </div>
     </div>
 
     <div id="conteudo">
-        <div>
-            <h2>Abertura de Ticket</h2>
+        <div class="row espacamento">
+            <div class="col-md-12">
+                <h2>Abertura de Ticket</h2>
+            </div>
         </div>
-        <div>
-            <p>E-mais em cópia:</p>
-            <input type="email" id="email" multiple>
+        <div class="row espacamento">
+            <div class="col-md-12">
+                <p>E-mais em cópia:</p>
+                <input type="email" id="email" class="comprimento altura" placeholder="Cada e-mail separado por virgula." multiple>
+            </div>
+        </div>
+        <div class="row lado espacamento">
+            <div id="divAssunto" class="col-md-6 comprimento">
+                <p>Assunto:</p>
+                <input type="text" id="assunto" class="altura comprimento">
+            </div>
+            <div id="divPrioridade" class="col-md-6 comprimento">
+                <p>Prioridade:</p>
+                <select id="prioridade" class="altura comprimento">
+                    <option value="0">Selecione a Prioridade</option>
+                    <option value="1">Baixa</option>
+                    <option value="2">Média</option>
+                    <option value="3">Alta</option>
+                </select>
+            </div>
+        </div>
+        <div class="row espacamento">
+            <div class="col-md-12">
+                <p>O Problema:</p>
+                <textarea type="text" id="problema" class="comprimento altura"></textarea>
+            </div>
+        </div>
+        <div class="row divBtn">
+            <div>
+                <button type="submit" class="btnEnviaTicket" onclick="verificaCampos()">Enviar Ticket</button>
+            </div>
         </div>
     </div>
+
+    
+    
+
 </body>
 </html>
