@@ -60,6 +60,9 @@ function getBaseURL() {
     const httpType = baseUrl.split('//')[0]
     const urlHost = baseUrl.split('//')[1]
     const base = urlHost.split('/')[0]
+    if(base =='ragnarok-2-0.github.io' ){
+        return httpType+'//'+base + '/sos-web';
+    }
     return httpType+'//'+base;
 }
 
