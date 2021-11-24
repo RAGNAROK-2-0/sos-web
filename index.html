@@ -8,10 +8,13 @@
     <title>SOS</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="index.js" type="text/javascript"></script>
+    <script src="./pages/relacao/relacao.js" type="text/javascript"></script>
     
     <link rel="icon" href="./imagens/icone.png">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./pages/relacao/relacao.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,64 +27,67 @@
     </div>
     <ul class="nav-links">
       <li>
-          <a href="#">
+          <a onclick="carregaPagina(''), mudaTitulo('')">
             <i class='bx bx-show' ></i>
             <span class="link_name">Monitoramento</span>
           </a>
           <ul class="sub-menu blank">
-            <li><a class="link_name" href="#">Monitoramento</a></li>
+            <li><a class="link_name" onclick="carregaPagina(''), mudaTitulo('')">Monitoramento</a></li>
           </ul>
       </li>
       <li>
-        <a href="#">
+        <a onclick="carregaPagina(''), mudaTitulo('')">
           <i class='bx bxs-edit-alt' ></i>
           <span class="link_name">Atendimento</span>
         </a>
         <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Atendimento</a></li>
+          <li><a class="link_name" onclick="carregaPagina(''), mudaTitulo('')">Atendimento</a></li>
         </ul>
       </li>
       <li>
-        <a href="#">
+        <a onclick="carregaPagina('./pages/relacao/relacao.html'), mudaTitulo('Relação')">
           <i class='bx bx-line-chart' ></i>
           <span class="link_name">Relação</span>
         </a>
         <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Relação</a></li>
+          <li><a class="link_name" onclick="carregaPagina('./pages/relacao/relacao.html'), mudaTitulo('Relação')">Relação</a></li>
         </ul>
       </li>
       <li>
-        <a href="#">
+        <a onclick="carregaPagina(''), mudaTitulo('')">
           <i class='bx bx-history'></i>
           <span class="link_name">Historico</span>
         </a>
         <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Historico</a></li>
+          <li><a class="link_name" onclick="carregaPagina(''), mudaTitulo('')">Historico</a></li>
         </ul>
       </li>
       
       <li id="perfil">
         <div class="iocn-link">
-          <a href="#">
+          <a onclick="carregaPagina(''), mudaTitulo('')">
             <i class='bx bx-log-out' ></i>
-            <span class="link_name">Jessica Vaz</span>
+            <span class="link_name">Nome Usuario</span>
           </a>
           <div id="status"></div>
         </div>
         <ul class="sub-menu" id="sub-menu-perfil">
-          <li><a class="link_name" href="#">Jessica Vaz</a></li>
-          <li><a href="#">Online</a></li>
-          <li><a href="#">Pausa</a></li>
-          <li><a href="#">Offline</a></li>
+          <li><a class="link_name">Nome Usuario</a></li>
+          <li><a onClick="mudaCorStatus('#16DA92')">Online</a></li>
+          <li><a onClick="mudaCorStatus('#EDEA89')">Pausa</a></li>
+          <li><a onClick="mudaCorStatus('#D02F4A')">Offline</a></li>
         </ul>
       </li>
   </li>
 </ul>
   </div>
-  <section class="home-section">
-    <div class="home-content">
+  <section id="pagina" class="home-section">
+    <div id="tituloPagina" class="home-content">
       <i class='bx bx-menu' ></i>
-      <span class="text">Título da Página</span>
+      <h1 id="titulo" class="text">Título da Página</h1>
+    </div>
+    <div id="loadPage">
+
     </div>
   </section>
 

@@ -1,11 +1,24 @@
 $(document).ready(function () {
     mudaCorStatus("#16DA92");
     //assim que for autenticado o usuario deve retornar ao index maior
-    verificaUsuarioAutenticado('');
+    // verificaUsuarioAutenticado('');
 });
 
-function carregaPagina(pagina = "index.html") {
+function carregaPagina(pagina) {
+    $("#loadPage").remove();
+    $("#pagina").append(`
+    <div id="loadPage">
+
+    </div>
+    `);
     $("#loadPage").load(pagina);
+}
+
+function mudaTitulo(titulo) {
+    $("#titulo").remove();
+    $("#tituloPagina").append(`
+    <h1 id="titulo" class="text">${titulo}</h1>
+    `);
 }
 
 function mudaCorStatus(cor) {

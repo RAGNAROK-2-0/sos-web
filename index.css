@@ -285,7 +285,7 @@
 
 #perfil {
   display: flex;
-  margin-top: 39em!important;
+  /* margin-top: 23rem!important; */
 }
 
 #sub-menu-perfil{
@@ -294,4 +294,12 @@
 
 body{
   height: 100vh;
+}
+
+a {
+  cursor: pointer;
+}
+
+#loadPage {
+  margin: 20px;
 }
