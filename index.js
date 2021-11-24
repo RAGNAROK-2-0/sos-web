@@ -82,6 +82,7 @@ function getBaseURL() {
 //se passar parametro a quando autenticado o usuario vai ao caminho especificado
 //se não ele irá para o index maior por padrão
 function verificaUsuarioAutenticado(pageToReturnAfterAuthCompleted = false){  
+    console.log('verificando usuario autenticado...')
     if(pageToReturnAfterAuthCompleted){
         var uma_semana = new Date();
         uma_semana.setDate(uma_semana.getDate() + 1);
