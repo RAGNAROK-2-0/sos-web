@@ -1,6 +1,5 @@
 var emails;
 
-
 function verificaCampos() {
     let assunto = $("#assunto").val();
     let prioridade = $("#prioridade").val();

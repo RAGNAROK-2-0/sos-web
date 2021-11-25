@@ -8,6 +8,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="ticket.js" type="text/javascript"></script>
+    <script src="./../../index.js" type="text/javascript"></script>
     
     <link rel="icon" href="../../imagens/icone.png">
     <link rel="stylesheet" href="ticket.css">
@@ -68,9 +69,13 @@
             </div>
         </div>
     </div>
-
-    
     
 
 </body>
 </html>
+
+<script>
+$(document).ready(function () {
+    verificaUsuarioAutenticado('./pages/ticket/ticket.html');
+});
+</script>

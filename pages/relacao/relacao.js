@@ -15,9 +15,13 @@
 
         var options = {
           title: 'Quantidade de Tickets Abertos e Fechados',
-          width: 800,
+          width: 1200,
           height: 400,
           backgroundColor: '#818CA0',
+          titleTextStyle: {
+            color: '#fff',
+            fontName: 'Signika',
+          },
           hAxis: {
             format: 'dd/MM/yy',
             gridlines: {count: 15}
