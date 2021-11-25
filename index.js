@@ -1,7 +1,8 @@
 $(document).ready(function () {
     mudaCorStatus("#16DA92");
     //assim que for autenticado o usuario deve retornar ao index maior
-    // verificaUsuarioAutenticado('');
+    verificaUsuarioAutenticado('');
+
 });
 
 function carregaPagina(pagina) {
